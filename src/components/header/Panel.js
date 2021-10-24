@@ -55,9 +55,8 @@ export default function Panel() {
                     <i className="fas fa-chevron-left"></i>
                   </div>
                 </div>
-                <div className={styles.panel_sub_menu_actions_list}>
+                <div onClick={hanldeAuth} className={styles.panel_sub_menu_actions_list}>
                   <div
-                    onClick={hanldeAuth}
                     className={styles.panel_sub_menu_actions_list_logout}>
                     <i className="fas fa-sign-out-alt"></i>
                     <span>خروج از حساب کاربری</span>
