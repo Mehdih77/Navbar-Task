@@ -1,7 +1,11 @@
+import { useEffect } from "react";
 import styles from "./SearchResult.module.css";
 import { movieData } from "../../../../Data/data";
+import { useAuthContext } from "../../../../context/AuthProvider";
 
-export default function SearchResult({ search }) {
+export default function SearchResult({ search, setSearch }) {
+  const [auth] = useAuthContext();
+
   const showMovieResult = movieData
     .filter((n) => {
       if (n.name.toLocaleLowerCase().includes(search.toLocaleLowerCase())) {
@@ -23,6 +27,10 @@ export default function SearchResult({ search }) {
         </div>
       </div>
     ));
+
+  useEffect(() => {
+    setSearch("");
+  }, [auth]);
 
   return (
     <>

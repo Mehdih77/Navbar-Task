@@ -16,7 +16,7 @@ export const languages = [
   { id: 4, name: "Russian" },
   { id: 5, name: "Arabic" },
   { id: 6, name: "Japanese" },
-  { id: 7, name: "indian" },
+  { id: 7, name: "Indian" },
   { id: 8, name: "German" },
   { id: 9, name: "Portuguese" },
   { id: 10, name: "Chinese" },

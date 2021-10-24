@@ -28,7 +28,7 @@ export default function SearchBar() {
           جستجوی پیشرفته<i className="fas fa-cog"></i>
         </p>
       </button>
-      <SearchResult search={search} />
+      <SearchResult search={search} setSearch={setSearch} />
     </section>
   );
 }
