@@ -1,3 +1,11 @@
+:root {
+  --borderRadius: 16px;
+  --grayColor: #d6d6d6;
+  --grayHover: #f0f0f1;
+  --mainColor: #ef1b2b;
+  --transition: all 0.2s ease-in-out;
+  --boxShadow: 1px 1px 5px rgb(0 0 0 / 10%);
+}
 * {
   font-family: IRANSans;
 }
@@ -12,4 +20,10 @@ li {
 }
 a {
   text-decoration: none;
+}
+button {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
 }

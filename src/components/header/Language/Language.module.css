@@ -1,57 +1,34 @@
-/* -------------------------------- Language -------------------------------- */
 .language {
   position: relative;
   margin-top: 18px;
 }
-.language_icon {
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-}
-.language_icon:focus ~ .language_sub_menu {
-  visibility: visible;
-}
-.language_icon img {
+.language_icon_btn img {
   width: 30px;
   height: 30px;
+}
+.language_icon_btn:focus ~ .language_sub_menu {
+  visibility: visible;
 }
 .language_sub_menu {
   visibility: hidden;
   position: absolute;
+  width: 160px;
+  height: 300px;
   top: 30px;
   right: -130px;
-  height: 300px;
   overflow-y: scroll;
   background-color: #fff;
-  box-shadow: 1px 1px 5px rgb(0 0 0 / 10%);
-  border-radius: 15px;
-  width: 160px;
+  box-shadow: var(--boxShadow);
+  border-radius: var(--borderRadius);
 }
 .language_sub_menu li {
   display: flex;
   direction: ltr;
   padding: 13px;
-  margin-right: -25px;
-  margin-bottom: 5px;
-  margin-top: -5px;
-  cursor: pointer;
+  margin: -7px -25px 6px 0;
   font-weight: 600;
   font-size: 14px;
-}
-.language_sub_menu li:hover span::before {
-  content: "";
-  position: absolute;
-  top: -12px;
-  left: -9px;
-  border-radius: 15px 0 0 15px;
-  padding: 8px 80px;
-  height: 35px;
-  background-color: #ececec48;
-  transition: all 0.2s ease-in-out;
-}
-.language_sub_menu li:hover {
-  color: #ef1b2b;
-  transition: all 0.2s ease-in-out;
+  cursor: pointer;
 }
 .language_sub_menu li span {
   position: absolute;
@@ -59,8 +36,23 @@
   height: 28px;
   background-color: #ececec;
   border-radius: 50%;
-  left: 17px;
+  left: 10px;
   margin-top: -3px;
+}
+.language_sub_menu li:hover span::before {
+  content: "";
+  position: absolute;
+  top: -12px;
+  left: -9px;
+  border-radius: 16px 0 0 16px;
+  padding: 8px 80px;
+  height: 35px;
+  background-color: #ececec48;
+  transition: var(--transition);
+}
+.language_sub_menu li:hover {
+  color: var(--mainColor);
+  transition: var(--transition);
 }
 /* -------------------------------- scrollbar ------------------------------- */
 .language_sub_menu::-webkit-scrollbar {
@@ -68,6 +60,6 @@
   direction: ltr;
 }
 .language_sub_menu::-webkit-scrollbar-thumb {
-  background-color: #eeeeee;
-  border-radius: 20px;
+  background-color: var(--grayHover);
+  border-radius: var(--borderRadius);
 }

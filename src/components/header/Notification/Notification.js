@@ -3,7 +3,7 @@ import styles from "./Notification.module.css";
 
 export default function Notification() {
   const [auth] = useAuthContext();
-
+  // if we have data we can map the data & also can create separate component for items...
   return (
     <>
       {auth && (

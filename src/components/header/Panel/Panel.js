@@ -1,6 +1,6 @@
+import styles from "./Panel.module.css";
 import { useAuthContext } from "../../../context/AuthProvider";
 import SubMenuClickHandler from "../../SubMenuClickHandler/SubMenuClickHandler";
-import styles from "./Panel.module.css";
 import user from "../../../images/user.png";
 
 export default function Panel() {

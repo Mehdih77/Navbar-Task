@@ -1,0 +1,66 @@
+.search_bar {
+  width: 1054px;
+  position: relative;
+  margin-top: 15px;
+}
+.search_bar_input {
+  position: relative;
+  width: 93.5%;
+  height: 46px;
+  border: none;
+  background-color: #f7f7f8;
+  border-radius: var(--borderRadius);
+  z-index: 9;
+}
+.search_bar_input:hover {
+  background-color: #f0f0f1;
+  transition: var(--transition);
+  cursor: pointer;
+}
+.search_bar_input:enabled {
+  padding: 0 50px 0 20px;
+}
+.search_bar_input_btn {
+  position: absolute;
+  right: 15px;
+  top: 11px;
+  color: rgb(136, 136, 136);
+  font-size: 17px;
+  z-index: 11;
+}
+.search_bar_input_filter_btn {
+  display: none;
+  position: absolute;
+  left: 1px;
+  top: 3px;
+  border-radius: var(--borderRadius);
+  width: 150px;
+  height: 40px;
+  background-color: #000;
+  color: #fff;
+  font-size: 13px;
+  z-index: 11;
+}
+.search_bar_input:focus {
+  background-color: #fff;
+}
+.search_bar_input:focus ~ button {
+  color: #000;
+}
+.search_bar_input:focus ~ button {
+  display: block;
+}
+.search_bar_input_filter_btn p {
+  color: #fff;
+  margin: 2px -5px 0 0;
+}
+.search_bar_input_filter_btn i {
+  color: #fff;
+  float: right;
+  font-size: 16px;
+  margin: 3px 10px 0 -5px;
+}
+.search_bar .search_bar_input_filter_btn:hover {
+  background-color: var(--mainColor);
+  transition: var(--transition);
+}
