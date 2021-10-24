@@ -1,5 +1,5 @@
 import styles from "./Header.module.css";
-import user from "../../images/user.jfif";
+import user from "../../images/user.png";
 import { useAuthContext } from "../../context/AuthProvider";
 import { useEffect, useState } from "react";
 

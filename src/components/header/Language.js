@@ -9,45 +9,19 @@ export default function Language() {
       </button>
       <div className={styles.language_sub_menu}>
         <ul>
-          <li>
-            English<span></span>
-          </li>
-          <li>
-            Spanish<span></span>
-          </li>
-          <li>
-            French<span></span>
-          </li>
-          <li>
-            Russian<span></span>
-          </li>
-          <li>
-            Arabic<span></span>
-          </li>
-          <li>
-            Japanese<span></span>
-          </li>
-          <li>
-            indian<span></span>
-          </li>
-          <li>
-            Spanish<span></span>
-          </li>
-          <li>
-            Spanish<span></span>
-          </li>
-          <li>
-            Spanish<span></span>
-          </li>
-          <li>
-            Spanish<span></span>
-          </li>
-          <li>
-            Spanish<span></span>
-          </li>
-          <li>
-            Spanish<span></span>
-          </li>
+          <li><span></span>English</li>
+          <li><span></span>Spanish</li>
+          <li><span></span>French</li>
+          <li><span></span>Russian</li>
+          <li><span></span>Arabic</li>
+          <li><span></span>Japanese</li>
+          <li><span></span>indian</li>
+          <li><span></span>Spanish</li>
+          <li><span></span>Spanish</li>
+          <li><span></span>Spanish</li>
+          <li><span></span>Spanish</li>
+          <li><span></span>Spanish</li>
+          <li><span></span>Spanish</li>
         </ul>
       </div>
     </section>
