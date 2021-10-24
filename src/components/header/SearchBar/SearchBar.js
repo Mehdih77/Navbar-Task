@@ -1,6 +1,6 @@
-import styles from "./Header.module.css";
-import { movieData } from "../../Data/data";
 import { useState } from "react";
+import styles from "./SearchBar.module.css";
+import { movieData } from "../../../Data/data";
 
 export default function SearchBar() {
   const [search, setSearch] = useState("");
@@ -10,6 +10,7 @@ export default function SearchBar() {
       if (n.name.toLocaleLowerCase().includes(search.toLocaleLowerCase())) {
         return n;
       }
+      return false;
     })
     .map((item) => (
       <div key={item.id} className={styles.search_result_item}>

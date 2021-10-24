@@ -1,10 +1,10 @@
-import Language from "./Language";
-import Notification from "./Notification";
-import SearchBar from "./SearchBar";
-import SideBarMenu from "./SideBarMenu";
 import styles from './Header.module.css';
-import Panel from "./Panel";
-import Logo from "./Logo";
+import Language from "./Language/Language";
+import Notification from "./Notification/Notification";
+import SearchBar from "./SearchBar/SearchBar";
+import SideBarMenu from "./SideBarMenu/SideBarMenu";
+import Panel from "./Panel/Panel";
+import Logo from "./Logo/Logo";
 
 export default function Header() {
   return (

@@ -1,5 +1,5 @@
-import iran from "../../images/iran.png";
-import styles from "./Header.module.css";
+import styles from "./Language.module.css";
+import iran from "../../../images/iran.png";
 
 export default function Language() {
   return (

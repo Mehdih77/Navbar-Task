@@ -1,0 +1,90 @@
+/* -------------------------------- Notification -------------------------------- */
+.notification {
+  position: relative;
+  margin-top: 11px;
+}
+.notification_btn {
+  background-color: transparent;
+  border: none;
+  font-size: 31px;
+  margin-right: 20px;
+  cursor: pointer;
+  position: relative;
+  color: #d6d6d6;
+}
+.notification_btn::after {
+  content: "";
+  position: absolute;
+  top: 12px;
+  right: 8px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #ef1b2b;
+}
+.notification_btn:focus {
+  color: #000;
+}
+.notification_btn:focus ~ .notification_sub_menu {
+  display: block !important;
+}
+.notification_sub_menu {
+  display: none !important;
+  position: absolute;
+  top: 30px;
+  left: 20px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  box-shadow: 1px 1px 5px rgb(0 0 0 / 10%);
+  border-radius: 20px;
+  z-index: 11;
+  font-size: 12px;
+  font-weight: bold;
+}
+.notification_sub_menu_list {
+  width: 92%;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  padding: 10px 20px;
+  cursor: pointer;
+  color: #afafaf;
+}
+.notification_sub_menu_list div:nth-child(1) i {
+  font-size: 25px;
+  padding-left: 20px;
+}
+.notification_sub_menu_list p {
+  margin-top: 10px;
+}
+.notification_sub_menu_list i {
+  color: #d6d6d6;
+  margin-top: 6px;
+}
+.notification_sub_menu_list:hover {
+  background-color: #f0f0f1;
+  transition: all 0.2s ease-in-out;
+}
+.notification_sub_menu_list:first-child {
+  border-radius: 20px 20px 0 0;
+}
+.notification_sub_menu_list_active {
+  color: #000;
+}
+.notification_sub_menu_list_active i {
+  color: rgba(239, 27, 43, 1) !important;
+}
+.notification_sub_menu_list_show_all {
+  cursor: pointer;
+  background-color: rgb(0, 0, 0);
+  color: #fff;
+  padding: 5px 0;
+  border-radius: 0 0 20px 20px;
+  justify-content: center;
+}
+.notification_sub_menu_list_show_all:hover {
+  background-color: rgba(239, 27, 43, 1);
+  transition: all 0.2s ease-in-out;
+}

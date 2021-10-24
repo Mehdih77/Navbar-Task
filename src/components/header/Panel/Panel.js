@@ -1,25 +1,15 @@
-import styles from "./Header.module.css";
-import user from "../../images/user.png";
-import { useAuthContext } from "../../context/AuthProvider";
-import { useEffect, useState } from "react";
+import { useAuthContext } from "../../../context/AuthProvider";
+import SubMenuClickHandler from "../../SubMenuClickHandler/SubMenuClickHandler";
+import styles from "./Panel.module.css";
+import user from "../../../images/user.png";
 
 export default function Panel() {
   const [auth, hanldeAuth] = useAuthContext();
 
-  const [open, setOpen] = useState(false);
-
-  const handleOpen = () => {
-    setOpen((prevOpen) => !prevOpen);
-  };
-
-  useEffect(() => {
-    if (!auth) {
-      setOpen(false);
-    }
-  }, [auth]);
+  const { menuRef, open, handleOpen } = SubMenuClickHandler();
 
   return (
-    <section className={styles.panel}>
+    <section ref={menuRef} className={styles.panel}>
       {auth ? (
         <>
           <button onClick={handleOpen} className={styles.panel_btn}>
@@ -55,9 +45,10 @@ export default function Panel() {
                     <i className="fas fa-chevron-left"></i>
                   </div>
                 </div>
-                <div onClick={hanldeAuth} className={styles.panel_sub_menu_actions_list}>
-                  <div
-                    className={styles.panel_sub_menu_actions_list_logout}>
+                <div
+                  onClick={hanldeAuth}
+                  className={styles.panel_sub_menu_actions_list}>
+                  <div className={styles.panel_sub_menu_actions_list_logout}>
                     <i className="fas fa-sign-out-alt"></i>
                     <span>خروج از حساب کاربری</span>
                   </div>

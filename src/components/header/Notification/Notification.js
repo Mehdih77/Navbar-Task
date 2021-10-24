@@ -1,5 +1,6 @@
-import { useAuthContext } from "../../context/AuthProvider";
-import styles from "./Header.module.css";
+import { useAuthContext } from "../../../context/AuthProvider";
+import styles from "./Notification.module.css";
+
 export default function Notification() {
   const [auth] = useAuthContext();
 

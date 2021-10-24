@@ -1,4 +1,4 @@
-import styles from "./Header.module.css";
+import styles from "./SideBarMenu.module.css";
 
 export default function SideBarMenu() {
   return (

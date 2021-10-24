@@ -1,0 +1,110 @@
+/* -------------------------------- panel -------------------------------- */
+.panle {
+  position: relative;
+}
+.panel_btn {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  margin: 8px 20px 0 20px;
+  cursor: pointer;
+}
+.panel_btn img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.panel_sub_menu {
+  position: absolute;
+  top: 30px;
+  left: 50px;
+  width: 330px;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  box-shadow: 1px 1px 5px rgb(0 0 0 / 10%);
+  border-radius: 20px;
+}
+
+.panel_sub_menu_profile {
+  margin-bottom: -5px;
+  padding: 20px;
+}
+.panel_sub_menu_profile img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+.panel_sub_menu_profile div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  margin-right: 15px;
+  margin-top: -2px;
+}
+.panel_sub_menu_profile div:nth-child(2) p:first-child {
+  font-size: 14px;
+  font-weight: 600;
+}
+.panel_sub_menu_profile div:nth-child(2) p:last-child {
+  margin-top: -13px;
+  color: #acacac;
+  font-size: 13px;
+}
+.panel_sub_menu_actions {
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  font-weight: 600;
+}
+.panel_sub_menu_actions i {
+  color: #acacac;
+  padding-left: 15px;
+  font-size: 21px;
+}
+.panel_sub_menu_actions_list div:nth-child(2) i {
+  font-size: 13px;
+  margin-left: -10px;
+  padding-top: 5px;
+}
+.panel_sub_menu_actions_list_logout {
+  color: #ef1b2b;
+  padding: 15px !important;
+  z-index: 999;
+}
+.panel_sub_menu_actions_list_logout i {
+  color: #ef1b2b;
+}
+.panel_sub_menu_actions div {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 15px;
+}
+.panel_sub_menu_actions div:hover {
+  background-color: #f0f0f1;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+.panel_sub_menu_actions div:last-child:hover {
+  border-radius: 0 0 20px 20px;
+}
+.panel_login_btn {
+  margin: 10px 20px 0 20px;
+  border: none;
+  outline: none;
+  background-color: #ef1b2b;
+  color: #fff;
+  padding: 13px 10px 13px 50px;
+  font-size: 12px;
+  border-radius: 13px;
+  cursor: pointer;
+}
+.panel_login_btn:hover {
+  background-color: #000;
+  transition: all 0.2s ease-in-out;
+}
+.panel_login_btn i {
+  font-size: 16px;
+  transform: rotate(180deg);
+  padding-right: 10px;
+  vertical-align: -4px;
+}

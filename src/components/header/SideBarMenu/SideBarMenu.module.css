@@ -1,0 +1,34 @@
+.side_bar {
+  display: inline;
+  width: 72px;
+  height: 72px;
+  background-color: #000;
+  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+/* Lines */
+.side_bar_bar1 {
+  width: 18px;
+  height: 2px;
+  background-color: #fff;
+  border-radius: 20px;
+  margin-right: -6px;
+}
+.side_bar_bar2 {
+  width: 24px;
+  height: 2px;
+  background-color: #fff;
+  margin: 5px 0;
+  border-radius: 20px;
+}
+.side_bar_bar3 {
+  width: 10px;
+  height: 2px;
+  background-color: rgba(239, 27, 43, 1);
+  border-radius: 20px;
+  margin-right: -13px;
+}
